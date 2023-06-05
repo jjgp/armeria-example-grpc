@@ -1,6 +1,5 @@
 package com.example.grpc
 
-import com.example.grpc.Hello.HelloRequest
 import com.linecorp.armeria.common.grpc.GrpcSerializationFormats
 import com.linecorp.armeria.server.Server
 import com.linecorp.armeria.server.docs.DocService
@@ -10,6 +9,8 @@ import io.grpc.protobuf.services.ProtoReflectionService
 import io.grpc.reflection.v1alpha.ServerReflectionGrpc
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
+import proto.example.grpc.Hello.HelloRequest
+import proto.example.grpc.HelloServiceGrpc
 
 private object Main {
     val logger: Logger = LoggerFactory.getLogger(Main::class.java)

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package com.example.grpc.hello;
-option java_package = "com.example.grpc";
+package proto.example.grpc.hello;
+option java_package = "proto.example.grpc";
 
 service HelloService {
   rpc SayHello (HelloRequest) returns (HelloReply) {}
